@@ -1,9 +1,9 @@
 import { PlusIcon } from "lucide-react";
-import StoreTableView from "../components/StoreTableView";
+import StoreTableView from "../components/store/StoreTableView";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import DeleteConfirmationModal from "../components/DeleteConfirmationModal";
-import StoreForm from "../components/StoreForm";
+import StoreForm from "../components/store/StoreForm";
 import {
   handleCreateAndEdit,
   handleDeleteStoreModal,
