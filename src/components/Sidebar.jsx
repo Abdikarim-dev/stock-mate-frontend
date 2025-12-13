@@ -49,25 +49,25 @@ const Sidebar = () => {
           <SidebarItem
             title={"Create Item"}
             icon={FaStore}
-            href="/dashboard/category"
+            href="/dashboard/item"
             text="Item Creation"
           />
           <SidebarItem
             title={"Import Items"}
             icon={FaBoxes}
-            href="/dashboard/inventory"
+            href="/dashboard/import-item"
             text="Imported Items Rp"
           />
           <SidebarItem
             title={"Export Items"}
             icon={FaBoxes}
-            href="/dashboard/exported-item"
+            href="/dashboard/export-item"
             text="Exported Items Rp"
           />
           <SidebarItem
             title={"Damaged Items"}
             icon={FaExclamationTriangle}
-            href="/dashboard/damaged-item"
+            href="/dashboard/damage-item"
             text="Damaged Items"
           />
           <SidebarItem
