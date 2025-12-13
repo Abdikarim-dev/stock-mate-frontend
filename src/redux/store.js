@@ -3,9 +3,9 @@ import authReducer from "./Auth/Auth.js";
 import auditReducer from "./Audit/Audit.js";
 import userReducer from "./User/User.js";
 import storeReducer from "./Store/Store.js";
-import inventoryReducer from "./inventory/Inventory.js";
-import categoryReducer from "./Category/Category.js";
-import damagedItemReducer from "./damagedItem/damagedItem.js";
+import inventoryReducer from "./ImportAndExportItem/ImportAndExportItem.js";
+import categoryReducer from "./Item/Item.js";
+import damagedItemReducer from "./DamagedItem/DamagedItem.js";
 const store = configureStore({
   reducer: {
     auth: authReducer,
