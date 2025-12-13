@@ -1,14 +1,11 @@
+import { useSelector } from "react-redux";
 import DashboardCards from "../components/DashboardCards";
 import QuickLinks from "../components/QuickLinks";
 import RecentActivities from "../components/RecentActivities";
 import SummaryInvenInfo from "../components/SummaryInvenInfo";
 import UserAvatar from "../components/UserAvatar";
 const Home = () => {
-
-  const user = {
-    name: "Jibril John",
-    role: "admin",
-  };
+  const { activeUser: user } = useSelector((s) => s.auth);
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
@@ -17,16 +14,16 @@ const Home = () => {
         <UserAvatar />
       </div>
 
-      {user.role === "admin" && <DashboardCards />}
+      {user.role === "ADMIN" && <DashboardCards />}
       <QuickLinks />
       <div
         className={`${
-          user.role === "admin" ? "flex" : ""
+          user.role === "ADMIN" ? "flex" : ""
         } flex-col gap-4  lg:flex-row`}
       >
         {/* Assuming SummaryInvenInfo is a component that displays inventory summary */}
         {/* Replace with actual import if needed */}
-        {user.role === "admin" && <SummaryInvenInfo />}
+        {user.role === "ADMIN" && <SummaryInvenInfo />}
         <RecentActivities />
       </div>
     </div>
